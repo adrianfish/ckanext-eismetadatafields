@@ -1,0 +1,10 @@
+{% ckan_extends %}
+
+{% block extras %}
+  {% if pkg_dict.asset_code %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Asset Code") }}</th>
+      <td class="dataset-details">{{ pkg_dict.asset_code }}</td>
+    </tr>
+  {% endif %}
+{% endblock %}

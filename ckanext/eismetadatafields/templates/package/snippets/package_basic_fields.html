@@ -1,0 +1,5 @@
+{% ckan_extends %}
+
+{% block package_basic_fields_custom %}
+  {{ form.input('asset_code', label=_('Asset Code'), id='field-asset_code', placeholder=_('asset code'), value=data.asset_code, error=errors.asset_code, classes=['control-medium']) }}
+{% endblock %}
